@@ -14,7 +14,7 @@ st.set_page_config(
 # Load pipeline
 @st.cache_resource
 def load_pipeline():
-    return joblib.load('models/readmission_pipeline.pkl')
+    return joblib.load('models/xgboost_model.pkl')
 
 pipeline = load_pipeline()
 
